@@ -1,4 +1,3 @@
-export default function handler(req, res) {
-  const { name } = req.query
-  res.status(200).send(`Hello ${name}!`)
+export const hello = async ctx => {
+  ctx.body = 'Hello World'
 }
